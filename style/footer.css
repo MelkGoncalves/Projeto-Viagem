@@ -2,8 +2,8 @@ footer {
     display: flex;
     align-items: center;
 
-    width: 100%;
-    height: 4.5rem;
+    /* width: 100%;
+    height: 4.5rem; */
     padding: 1.5rem 2rem;
     
 }
@@ -34,4 +34,23 @@ footer {
         font-weight: var(--fw-base);
         line-height: 150%;
     }
+}
+
+@media screen and (width <= 730px) {
+    footer {
+       display: grid;
+       align-items: center;
+       gap: 1rem;   
+       padding: 1rem;    
+    }
+
+    .copyright {
+        margin: auto;
+    }
+
+    .links {
+        display: flex;
+        margin: auto;
+    }
+    
 }
