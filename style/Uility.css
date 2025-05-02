@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-1\.5 {
+    gap: 1.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.profile {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+
+.desktop-only  {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 20.5rem;
+}
+
+
+@media screen and (width >= 730px) {
+    
+    img {
+        max-width: 17.875rem;
+        max-height: 17.875rem;
+    }
+}

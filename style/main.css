@@ -1,0 +1,26 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--px-md);
+    padding: 1.5rem 2rem;
+
+    max-width: 80em;
+    max-height: 59.625em;
+}
+
+@media screen and (width <= 730px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--px-sm);
+        padding-inline: var(--px-sm);
+        padding-block: var(--py-sm);
+
+    }
+
+    #gallery img {
+        width: 375px;
+        height: auto;
+    }
+}

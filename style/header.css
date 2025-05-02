@@ -1,0 +1,103 @@
+header {
+    background-color: var(--surface-color);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: var(--py-base);
+}
+
+.apresentation {
+   display: flex;
+   /* max-width: 37rem; */
+   gap: var(--py-base);
+   align-items: center;
+   margin-right: auto;
+
+   & h1 {
+        color: var(--text-color-primary);
+        font-size: var(--fs-hd);
+        font-weight: var(--fw-ex-bold);
+        line-height: 125%;
+        padding-bottom: .5rem;
+   }
+
+   & p {
+        max-width: 24rem;
+        height: 7.5rem;
+        font: var(--ff-sans);
+        color: var(--text-color-secondary);
+        font-size: var(--fs-md);
+        font-weight: var(--fw-base);
+        line-height: 170%;
+   }
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem; 
+    
+    width: 18.125rem;
+
+    & div {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        font-family: var(--ff-sans);
+        font-size: var(--fs-md);
+        line-height: 170%;
+    }
+
+    & strong {
+        color: var(--text-color-secondary);
+        font-weight: var(--fw-bold);
+        line-height: 170%;
+    }
+    
+}
+
+@media screen and (width <= 730px) {
+    .hero {
+        min-height: 32.375rem;
+        display: grid;
+        padding: var(--py-base);
+        gap: 2rem;
+    }
+
+    .apresentation {
+        display: grid; 
+        gap: var(--py-base);
+        align-items: center;
+        margin-right: auto;
+       
+
+        & h1 {
+            color: var(--text-color-primary);
+            font-size: var(--fs-mb);
+            font-weight: var(--fw-ex-bold);
+            line-height: 125%;
+            padding-bottom: .5rem;
+        }
+
+          & p {
+            max-width: 18.5rem;
+            height: 9rem;
+            font: var(--ff-sans);
+            color: va(--text-color-secondary);
+            font-size: var(--fs-md);
+            font-weight: var(--fw-base);
+            line-height: 170%;
+        }
+    }
+
+    
+}
+
+
+
+
+

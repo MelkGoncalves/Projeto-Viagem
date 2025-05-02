@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --bg-color: #FFFFFF;
+    --surface-color: #F5F5F5;
+    --sk-color: #D9D9D9;
+    --text-color-primary: #313131;
+    --text-color-secondary: #6C6C6C;
+    --brand-color: #EF5F4C;
+    --brand-color-secondary: #ca9790;
+
+    --ff-sans: "Poppins", system-ui, sans-serif;
+    --fw-base: 400;
+    --fw-bold: 500;
+    --fw-ex-bold: 800;
+    
+
+    --fs-sm: 0.75rem;
+    --fs-md: 0.875rem;
+    --fs-base: 1rem;
+    --fs-mb: 1.5rem;
+    --fs-hd: 2rem;
+
+    --py-sm: 1rem;
+    --py-base: 2rem;
+    --px-sm: 1rem;
+    --px-base: 1.25rem;
+    --px-md: 1.5rem;
+    --px-lg: 2rem;
+}
+
+html {
+    background-color: rgb(129, 129, 112);
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-base);
+
+    overflow-x: hidden;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    max-width:80em;
+    max-height: 84.125em;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    background: var(--brand-color);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 1;
+}  
